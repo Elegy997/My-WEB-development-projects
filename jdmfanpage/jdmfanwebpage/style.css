@@ -1,0 +1,54 @@
+body {
+    background-image: linear-gradient(rgb(11, 149, 184), rgb(0, 124, 72));
+    
+}
+
+.maintitle {
+    text-align: center;
+    background-color:lightblue;
+    font-weight: bold;
+    border: 1px solid #000;
+}
+
+.undertitle {
+    text-align: center;
+    background-color: darkseagreen;
+    border: 1px solid #000;
+}
+
+p {
+    text-align: justify;
+    text-indent: 15px;
+    line-height: 1.5;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav {
+    background-color: rgb(165, 105, 113);
+    margin-bottom: 7.5px;
+    text-align: center;
+    border: 1px solid #000;
+}
+
+a {
+    color: rgb(116, 89, 3);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 1px 10px 2px 10px;
+    background-color: rgb(144, 168, 4);
+}
+
+a:hover {
+    color: rgb(141, 114, 141);
+    text-decoration: none;
+    background-color: skyblue;
+}
+
+footer {
+    background-color: rgb(97, 133, 145);
+    text-align: center;
+    padding: 8px 0 8px 0;
+    font-weight: bold;
+    border: 1px solid #000;
+}

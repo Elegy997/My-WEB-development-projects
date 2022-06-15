@@ -1,0 +1,37 @@
+main: /
+    - server.js
+    app.use("/", require("./routes/mainRoute"));
+    - routes/mainRoute.js
+    router.get("/", getRequest);
+    - controllers/mainControllers/mainGetRequests.js
+
+elelmiszer: /elemiszer/
+    - server.js
+    app.use("/elelmiszer", require("./routes/elemiszerRoute"));
+    - routes/elelmiszerRoute.js
+    router.get("/", elemiszerekMegjelenitese);
+    router.get("/feltoltes", feltoltOldalLekeres);
+    router.get("/modositas", modositOldalLekeres);
+    router.get("/:vonalkod", egyElemiszerMegjelenitese);
+    router.post("/feltoltes", elemiszerFeltoltes);
+    - controllers/elelmiszerControllers/elelmiszerRequests.js
+    - controllers/elelmiszerControllers/elelmiszerFeltoltesRequests.js
+    - models/Food.js
+    - views/elelmiszer.ejs
+    - views/egyElelmiszer.ejs
+    - views/elelmiszerFeltolt.ejs
+
+ruha: /ruha/
+    - server.js
+    app.use("/elelmiszer", require("./routes/ruhaRoute"));
+    - routes/ruhaRoute.js
+    router.get("/", ruhakMegjelenitese);
+    router.get("/:vonalkod", egyRuhaMegjelenitese);
+    router.get("/feltoltes", feltoltOldalLekeres);
+    router.post("/feltoltes", ruhaFeltoltes);
+    - controllers/ruhaControllers/ruhaRequests.js
+    - controllers/ruhaControllers/ruhaFeltoltesRequests.js
+    - models/Robe.js
+    - views/ruha.ejs
+    - views/egyRuha.ejs
+    - views/ruhaFeltolt.ejs
